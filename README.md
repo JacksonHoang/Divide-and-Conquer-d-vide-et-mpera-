@@ -3,16 +3,16 @@ Basic Divide and Conquer algorithm search
 
 public class nameOne {
 
-public static void main (String [] args)
-{
+public static void main (String [] args){
 
     int myNumber = 6;
     int findNumber= guessNumber(myNumber);
     System.out.println("Your number is: " + findNumber);
 
 }
-public static int guessNumber(int n)
-{
+
+public static int guessNumber(int n){
+
     int low = 1;
     int high = n;
     while(low <= high)
@@ -26,5 +26,5 @@ public static int guessNumber(int n)
             low= mid+1;
     }
     return -1;
-}
+    }
 }
